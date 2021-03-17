@@ -1,9 +1,13 @@
 import React from 'react';
+import type {Node} from 'react';
 import {
   SafeAreaView,
-  StyleSheet,
   ScrollView,
   StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
 } from 'react-native';
 import CustomTextView from './CustomTextView';
 
@@ -25,9 +29,5 @@ const App = () => {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-
-});
 
 export default App;
