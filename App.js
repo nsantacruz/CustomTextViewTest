@@ -16,15 +16,16 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <CustomTextView
-          style={{
-            color: 'red',
-            width: 100,
-            height: 100,
-            backgroundColor: 'pink'
-          }}
-          text="This text is <b>black</b>, not <i>red</i>"
-        />
+        <View style={{flex: 1, flexDirection: "row", backgroundColor: 'pink'}}>
+          <CustomTextView
+            style={{
+              color: 'red',
+              flex: 1,
+              padding: 100,
+            }}
+            text="This text is <b>black</b>, not <i>red</i>"
+          />
+        </View>
       </SafeAreaView>
     </>
   );
